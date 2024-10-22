@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500;&display=swap');
+
+:root{
+    --lg-font: 'kaisei Tokumin,' serif;
+    --sm-font: 'poppins' sans-serif;
+    --green: #2c9e49;
+}
+body{
+font-family: var(--sm-font);
+}
+
+/* button   */
+.bg-primary{
+    background-color: var(--green)!important ;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px ;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--green);
+}
+
+/* text color*/
+.text-primary{
+    color: var(--green)!important;
+
+}
+/* navbar   */
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link :hover{
+    color: var(--pink)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* header*/
+#header{
+        background-image: url('../images/Untitled.png');
+        background-size: contain; /* أو contain */
+        background-repeat: no-repeat;
+        background-position: center;
+    
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff !important ;
+}
+.carousel-item ,btn:hover{
+    border-color: var(--pink) !important;
+}
+
+/* tittle*/
+  .tittle h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+/* collection*/
+.active-filter-btn{
+    background-color: var(--green)!important;
+    color: #fff !important;
+    border-color: var(--green)!important;
+}
+.filter-button-group .bnt:hover{
+    color: #fff !important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+/* special*/
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px !important;
+} 
+.special-img {
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform: scale(1.2);
+}
+
+/* offers*/
+#offers{
+    background: url(../images/المعدات_الزراعية_الحديثة.jpg) center/cover no-repeat;
+}
+#offers .row{
+min-width: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+  .offers-content .btn{
+    border-color: transparent!important;
+  } 
+
+   /* footer*/
+   footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+   }
+
+
+/* meda queries*/
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+}
+
+.card-img-top{
+    top: 20px;
+    right: 20px;
+    width: 100%;
+}
